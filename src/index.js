@@ -1,7 +1,7 @@
 import e from "express";
 import bodyParser from "body-parser";
 import sendHook from "./discord/webhook.js";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import { collection } from "./db/mongodb.js"
 import { GridFSBucket } from "mongodb";
 import dotenv from 'dotenv';
