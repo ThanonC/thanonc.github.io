@@ -1,12 +1,14 @@
 import e from "express";
-import config from "../config.json" assert {"type": "json"}
 import bodyParser from "body-parser";
 import sendHook from "./discord/webhook.js";
 import bcrypt from "bcrypt";
 import { collection } from "./db/mongodb.js"
 import { GridFSBucket } from "mongodb";
+import dotenv from 'dotenv';
+dotenv.config();
 
 const app = e();
+const port = 8421
 
 app.use(e.static("public"));
 app.use(e.json());
@@ -106,4 +108,4 @@ app.post('/sendme', (req, res) => {
     return res.redirect("/");
 })
 
-app.listen(config.port, () => console.log(`App listening at http://localhost:${config.port}`));
+app.listen(port, () => console.log(`App listening at http://localhost:${port}`));

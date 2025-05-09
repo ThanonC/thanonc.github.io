@@ -1,7 +1,10 @@
 import { Webhook } from "discord-webhook-node";
-import config from "../../config.json" assert {"type": "json"}
+import dotenv from 'dotenv';
+dotenv.config();
 
-const hook = new Webhook(config["discord.webhook"]);
+const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
+
+const hook = await new Webhook(webhookUrl);
 
 export default async function sendHook(message) {
     try {

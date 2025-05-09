@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
-const uri = "mongodb+srv://thanon:1utPf5axUbWoU7Wd@cluster0.bp4h51q.mongodb.net/user-base";
+import dotenv from 'dotenv';
+dotenv.config();
+const uri = process.env.db;
 
 const clientOptions = { serverApi: { version: '1', strict: true, deprecationErrors: true } };
 
