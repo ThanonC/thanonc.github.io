@@ -1,14 +1,10 @@
 import mongoose from "mongoose";
 import dotenv from 'dotenv';
 dotenv.config();
-const uri = process.env.db;
 
-await mongoose.connect(uri, {
+mongoose.connect(process.env.db, {
   ssl: true,
-  tlsInsecure: false,
-  tlsAllowInvalidCertificates: false,
-  tlsAllowInvalidHostnames: false,
-  tlsCAFile: './path/to/ca.pem' // optional for self-signed certs
+  serverApi: { version: '1' },
 });
 
 const loginSchema = new mongoose.Schema({
