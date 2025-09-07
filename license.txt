@@ -1,0 +1,11 @@
+Model Information:
+* title:	Pearto
+* source:	https://sketchfab.com/3d-models/pearto-3c781726b74e44a4826573140edabe53
+* author:	dr1ttx (https://sketchfab.com/dr1ttx)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Pearto" (https://sketchfab.com/3d-models/pearto-3c781726b74e44a4826573140edabe53) by dr1ttx (https://sketchfab.com/dr1ttx) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
